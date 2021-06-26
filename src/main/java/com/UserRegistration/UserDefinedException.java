@@ -4,22 +4,15 @@
  *@version 1.0
  *@since 18-06-2021
  ************************************************************************************************/
+
 package com.UserRegistration;
-
-import static org.junit.Assert.assertTrue;
-import org.junit.Test;
-
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
+// customized Exception
+public class UserDefinedException extends Exception {
+	
+    public String errormessage;
+    
+    //Initializing Constructor
+	public UserDefinedException(String message) {
+		this.errormessage = message;	
+	}
 }
